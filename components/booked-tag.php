@@ -1,0 +1,1 @@
+<span class="booked-tag">booked</span>

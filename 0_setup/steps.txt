@@ -1,0 +1,71 @@
++   vs code extensions:
+        php intelephense
+        php server
+        live server
+
++   download xamp `https://www.apachefriends.org/` 
+        see `img_00.png`
+
++   run setup, select `sql` and `phpmyadmin`
+        see `img_01.png`
+
++   note the installation folder
+        see `img_02.png`
+
++   move project to `C:\xampp\htdocs`
+        where `C:\xampp\` is the installation folder
+
++   start the apache service
+        see `img_03.png`
+    it should turn green
+        see `img_04.png`
+
++   start the MySQL service
+        you may encounter an error if the default port `3306` is being used
+        you might have another sql server installed on your machine
+        click on the `config` then `my.ini`
+        change the port number to something else e.g 3307
+
+        see `img_06.png`
+
+    both servers should be running
+        see `img_07.png`
+
++   if the port was changed, click `config -> phpMyAdmin (config.inc.php)`, add:
+
+    `
+    /* Bind to the localhost ipv4 address and tcp */
+    ...
+    $cfg['Servers'][$i]['port'] = '3307';
+    `
+
++   add "php.validate.executablePath": "C:/xampp/php/php.exe"
+    inside "c:\Users\owola\AppData\Roaming\Code\User\settings.json" 
+
+    where 'owola' is your user profile name
+
++   in vivaldi, get live server extenstion from `https://chromewebstore.google.com`
+
++   select the extension
+        enable live reload
+        add actual server address
+            i.e. `http://localhost/discourse_hub/content/index.php`
+        add live server address
+            click `go live` in vs code bottom pane
+            a page should open, it's address is the liveserver address
+                i.e `http://127.0.0.1:5500`
+        click `apply`
+
++   access the homepage with `http://localhost/discourse_hub/content/index.php`
+
+
+
++   to access the database, use: `http://localhost/phpmyadmin/index.php?route=/`
+    
+    copy the text in:
+
+    `db\sql\0_create_db.sql`
+    `db\sql\1_create_table.sql`
+    `db\sql\2_insert_values.sql`
+
+    and execute the queries in order
