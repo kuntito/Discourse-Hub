@@ -3,7 +3,7 @@ A web application for a dummy organization called `Discourse Hub`. The organizat
 
 Once logged in, users can view and delete bookings.
 
-[view here](https://w22027142.nuwebspace.co.uk/kf7013/content/index.php)
+[view here](https://pink-beaver-879542.hostingersite.com/discourse_hub/content/index.php)
 
 [ui design](https://www.figma.com/design/Qn2g85cPNHM5Y91ObZ9HBB/_DiscourseHub?node-id=0-1&t=No7PudRkWl3hOLsb-1)
 
